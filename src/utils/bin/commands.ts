@@ -70,23 +70,6 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-export const blog = async (args: string[]): Promise<string> => {
-  window.open(`https://blog.zer0code.cn`);
-
-  return 'Opening Blog...';
-};
-
-export const index = async (args: string[]): Promise<string> => {
-  window.open(`https://zer0code.cn`);
-
-  return 'Opening Index...';
-};
-
-export const bilibili = async (args: string[]): Promise<string> => {
-  window.open(`https://space.bilibili.com/276556775`);
-
-  return 'Opening BiliBili...';
-};
 // Search
 export const google = async (args: string[]): Promise<string> => {
   window.open(`https://google.com/search?q=${args.join(' ')}`);
@@ -106,11 +89,6 @@ export const bing = async (args: string[]): Promise<string> => {
 export const reddit = async (args: string[]): Promise<string> => {
   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
   return `Searching reddit for ${args.join(' ')}...`;
-};
-
-export const netease = async (args: string[]): Promise<string> => {
-  window.open(`https://music.163.com/#/search/m/?s=${args.join(' ')}`);
-  return `Searching Netease Music for ${args.join(' ')}...`;
 };
 
 // Typical linux commands
@@ -156,21 +134,21 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.bilibili.com/video/BV1uT4y1P7CX', '_blank'); // ...I'm sorry
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-  ███████████             █████████  █████   █████ ██████████ █████       █████      
-  ░█░░░░░░███             ███░░░░░███░░███   ░░███ ░░███░░░░░█░░███       ░░███       
-  ░     ███░             ░███    ░░░  ░███    ░███  ░███  █ ░  ░███        ░███       
-       ███     ██████████░░█████████  ░███████████  ░██████    ░███        ░███       
-      ███     ░░░░░░░░░░  ░░░░░░░░███ ░███░░░░░███  ░███░░█    ░███        ░███       
-    ████     █            ███    ░███ ░███    ░███  ░███ ░   █ ░███      █ ░███      █
-   ███████████           ░░█████████  █████   █████ ██████████ ███████████ ███████████
-  ░░░░░░░░░░░             ░░░░░░░░░  ░░░░░   ░░░░░ ░░░░░░░░░░ ░░░░░░░░░░░ ░░░░░░░░░░░                                               
+█████        ███                       ███████████                                   
+░░███        ░░░                       ░█░░░███░░░█                                   
+ ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
+ ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
+ ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
+ ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
+ ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
+░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
